@@ -104,8 +104,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Tool to import and encrypt report using multiple recipient')
     parser.add_argument("-i", "--importkeys", help="Use the program to import pgp keys from 'Keys' directory", default=False, required=False, action='store_true')
     parser.add_argument("-e", "--encrypt", help="Use the program to encrypt the file", default=False, required=False, action='store_true')
-    parser.add_argument("-w", "--windows", help="Tool runs on windows", default=False, required=False, action='store_true')
-    parser.add_argument("-l", "--linux", help="Tool runs on linux", default=False, required=False, action='store_true')
     parser.add_argument("-r", "--recipient", metavar='recipient',help="It can be a single recipient or organization. Ex. sample@example.org or example.org or 'example.org|example.com'", default="", required=False)
     parser.add_argument("-f", "--filepath", metavar='filepath',help="Filepath of the file to be encrypted", default="", required=False)
     args = parser.parse_args()
